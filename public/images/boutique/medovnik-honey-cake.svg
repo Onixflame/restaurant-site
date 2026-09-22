@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#17130f"/>
+        <stop offset="1" stop-color="#3a2a1b"/>
+      </linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#e4c28a"/>
+        <stop offset="1" stop-color="#9f7444"/>
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000" flood-opacity="0.35"/>
+      </filter>
+    </defs>
+    <rect width="1200" height="900" fill="url(#bg)"/>
+    <circle cx="980" cy="140" r="220" fill="#ffffff" fill-opacity="0.04"/>
+    <circle cx="200" cy="760" r="240" fill="#ffffff" fill-opacity="0.03"/>
+    
+<ellipse cx="600" cy="700" rx="280" ry="36" fill="#000" fill-opacity="0.18"/>
+<g filter="url(#shadow)">
+ <path d="M430 615 L540 295 L810 465 L620 635 Z" fill="#dfb06f"/>
+ <path d="M470 593 L558 338 L760 466 L618 604 Z" fill="#f0d39f"/>
+ <path d="M490 535 L565 355 L710 445 L612 560 Z" fill="#be8648" fill-opacity="0.85"/>
+ <path d="M450 616 L622 637 L810 465 L637 447 Z" fill="#c18d56"/>
+</g>
+<circle cx="760" cy="250" r="18" fill="#f2e6c2"/>
+<circle cx="794" cy="228" r="12" fill="#f2e6c2"/>
+<text x="82" y="96" font-size="26" letter-spacing="5" fill="#d4ad76" font-family="Arial, sans-serif">TAKE-AWAY PASTRY</text>
+
+    </svg>

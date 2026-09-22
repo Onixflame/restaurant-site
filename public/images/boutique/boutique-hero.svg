@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#181410"/>
+      <stop offset="0.55" stop-color="#2d2118"/>
+      <stop offset="1" stop-color="#120f0d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#e5c58f"/>
+      <stop offset="1" stop-color="#94683d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="36" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <radialGradient id="lampGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 170) rotate(90) scale(180 220)">
+      <stop stop-color="#ffdeae" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#ffdeae" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect y="730" width="1600" height="170" fill="#100d0b"/>
+  <path d="M930 0H1600V760H930C875 760 830 715 830 660V100C830 45 875 0 930 0Z" fill="#1d1714"/>
+  <path d="M0 0H880V900H0V0Z" fill="#1a1511"/>
+  <path d="M980 80C980 45 1008 16 1045 16H1510C1547 16 1576 45 1576 80V610H980V80Z" fill="#231b16" stroke="#6f5337" stroke-width="2"/>
+  <path d="M1030 108C1030 86 1048 68 1071 68H1485C1508 68 1526 86 1526 108V550H1030V108Z" fill="#13100d"/>
+  <path d="M1100 108V550M1180 108V550M1260 108V550M1340 108V550M1420 108V550" stroke="#34271d"/>
+  <path d="M1030 182H1526M1030 274H1526M1030 366H1526M1030 458H1526" stroke="#34271d"/>
+  <ellipse cx="1250" cy="190" rx="170" ry="170" fill="url(#lampGlow)"/>
+  <path d="M1185 80H1315L1288 138H1212L1185 80Z" fill="#281e16"/>
+  <path d="M1204 138H1296V198C1296 228 1272 252 1242 252H1258C1228 252 1204 228 1204 198V138Z" fill="#c68a3c"/>
+  <circle cx="1250" cy="176" r="30" fill="#ffe9c0" fill-opacity="0.8"/>
+  <g filter="url(#shadow)">
+    <path d="M935 246C935 223 954 204 977 204H1472C1495 204 1514 223 1514 246V720H935V246Z" fill="#251c17" stroke="#6b4f34" stroke-width="2"/>
+    <path d="M970 246C970 232 981 220 995 220H1455C1469 220 1480 232 1480 246V690H970V246Z" fill="#2e221a"/>
+    <path d="M970 346H1480M970 446H1480M970 546H1480" stroke="#4a382a"/>
+    <path d="M1085 220V690M1200 220V690M1315 220V690" stroke="#4a382a"/>
+  </g>
+  <!-- products on shelving -->
+  <g>
+    <rect x="1010" y="250" width="52" height="140" rx="18" fill="#d5ccb6"/><rect x="1018" y="285" width="36" height="88" fill="#8b3d4b" fill-opacity="0.35"/><text x="1036" y="274" font-size="11" fill="#8d673f" text-anchor="middle" font-family="Arial">PINOT</text>
+    <rect x="1128" y="255" width="46" height="132" rx="18" fill="#d8d3bc"/><rect x="1135" y="292" width="32" height="78" fill="#d4cb79" fill-opacity="0.45"/><text x="1151" y="276" font-size="10" fill="#8d673f" text-anchor="middle" font-family="Arial">RIESLING</text>
+    <rect x="1228" y="285" width="74" height="88" rx="18" fill="#141210"/><text x="1265" y="337" font-size="20" fill="#d4ad76" text-anchor="middle" font-family="Georgia">ONIX</text>
+    <rect x="1358" y="286" width="84" height="82" rx="18" fill="#efe6d7"/>
+    <circle cx="1382" cy="327" r="12" fill="#5a1f46"/><circle cx="1406" cy="327" r="12" fill="#d19b58"/><circle cx="1430" cy="327" r="12" fill="#6b3c2f"/>
+
+    <rect x="1008" y="460" width="94" height="64" rx="20" fill="#f3ebdc"/><text x="1055" y="498" font-size="16" fill="#6b4e21" text-anchor="middle" font-family="Georgia">HONEY</text>
+    <ellipse cx="1170" cy="490" rx="54" ry="42" fill="#d09f52"/><ellipse cx="1170" cy="490" rx="44" ry="32" fill="#f3ead7"/><circle cx="1154" cy="478" r="10" fill="#5a1f46"/><circle cx="1184" cy="472" r="10" fill="#5a1f46"/><circle cx="1173" cy="503" r="10" fill="#5a1f46"/>
+    <rect x="1260" y="448" width="82" height="122" rx="14" fill="#161311" stroke="#987248" stroke-width="2"/><text x="1301" y="505" font-size="18" fill="#d4ad76" text-anchor="middle" font-family="Georgia">Dinner</text><text x="1301" y="529" font-size="18" fill="#d4ad76" text-anchor="middle" font-family="Georgia">for Two</text>
+    <rect x="1382" y="454" width="62" height="110" rx="24" fill="#d7d0bb"/><rect x="1391" y="490" width="44" height="64" fill="#b47a35" fill-opacity="0.35"/>
+  </g>
+  <!-- boutique counter -->
+  <g filter="url(#shadow)">
+    <path d="M920 652C920 629 939 610 962 610H1518C1541 610 1560 629 1560 652V790H920V652Z" fill="#201915"/>
+    <path d="M920 652H1560L1498 860H982L920 652Z" fill="#2c221c"/>
+  </g>
+  <ellipse cx="1306" cy="676" rx="64" ry="48" fill="#efe6d7"/>
+  <circle cx="1284" cy="664" r="12" fill="#5a1f46"/><circle cx="1310" cy="655" r="12" fill="#5a1f46"/><circle cx="1334" cy="674" r="12" fill="#5a1f46"/>
+  <rect x="1160" y="634" width="72" height="96" rx="26" fill="#141210" stroke="#9f7444" stroke-width="2"/>
+  <text x="1196" y="689" font-size="22" fill="#d4ad76" text-anchor="middle" font-family="Georgia">ONIX</text>
+  <rect x="1040" y="636" width="70" height="92" rx="18" fill="#f7f1e7"/>
+  <text x="1075" y="690" font-size="18" fill="#8d673f" text-anchor="middle" font-family="Georgia">HONEY</text>
+  <!-- left architecture / prague gothic mood -->
+  <path d="M80 780V170C80 80 154 40 214 40C278 40 352 82 352 170V780" stroke="#3d2d21" stroke-width="14"/>
+  <path d="M110 780V188C110 124 157 84 214 84C272 84 320 124 320 188V780" fill="#221914"/>
+  <path d="M144 780V210C144 158 176 124 214 124C252 124 286 158 286 210V780" fill="#120f0d"/>
+  <path d="M112 214H318" stroke="#4f3a2a" stroke-width="8"/>
+  <path d="M162 126L214 80L266 126" stroke="#6c5135" stroke-width="6" fill="none"/>
+  <path d="M414 140C414 108 440 82 472 82H760C792 82 818 108 818 140V646C818 678 792 704 760 704H472C440 704 414 678 414 646V140Z" fill="#191410" stroke="#60472f" stroke-width="2"/>
+  <path d="M454 170H778V584H454V170Z" fill="#0f0d0b"/>
+  <path d="M454 170C500 214 530 250 616 250C700 250 732 214 778 170" fill="#17130f"/>
+  <path d="M454 584C502 530 528 504 616 504C706 504 732 530 778 584" fill="#17130f"/>
+  <path d="M506 314H726" stroke="#3a2b20" stroke-width="2"/><path d="M506 372H726" stroke="#3a2b20" stroke-width="2"/><path d="M506 430H726" stroke="#3a2b20" stroke-width="2"/>
+  <g filter="url(#shadow)">
+    <rect x="486" y="654" width="260" height="92" rx="20" fill="#f1e8dc"/>
+  </g>
+  <text x="616" y="694" font-size="44" fill="#2a1f17" text-anchor="middle" font-family="Georgia, serif">Boutique</text>
+  <text x="616" y="724" font-size="18" fill="#8d673f" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="3">WINE · GIFTS · DESSERTS</text>
+</svg>

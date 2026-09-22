@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" fill="none">
+    <defs>
+      <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#181510"/>
+        <stop offset="1" stop-color="#362516"/>
+      </linearGradient>
+      <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+        <stop stop-color="#e4c28a"/>
+        <stop offset="1" stop-color="#9f7444"/>
+      </linearGradient>
+      <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+        <feDropShadow dx="0" dy="18" stdDeviation="26" flood-color="#000" flood-opacity="0.35"/>
+      </filter>
+    </defs>
+    <rect width="1200" height="900" fill="url(#bg)"/>
+    <circle cx="980" cy="140" r="220" fill="#ffffff" fill-opacity="0.04"/>
+    <circle cx="200" cy="760" r="240" fill="#ffffff" fill-opacity="0.03"/>
+    
+<g filter="url(#shadow)">
+ <rect x="420" y="270" width="360" height="360" rx="42" fill="#402b1d"/>
+ <rect x="450" y="300" width="300" height="300" rx="30" fill="#d19a32"/>
+ <rect x="470" y="395" width="260" height="120" rx="22" fill="#f5e7c7"/>
+ <text x="600" y="445" font-size="38" text-anchor="middle" fill="#6b4e21" font-family="Georgia, serif">PRAGUE</text>
+ <text x="600" y="484" font-size="34" text-anchor="middle" fill="#6b4e21" font-family="Georgia, serif">HONEY</text>
+ <rect x="458" y="230" width="284" height="70" rx="26" fill="#2c231c"/>
+</g>
+<ellipse cx="600" cy="670" rx="210" ry="34" fill="#000" fill-opacity="0.24"/>
+<circle cx="310" cy="260" r="34" fill="#d4ad76" fill-opacity="0.45"/>
+<circle cx="872" cy="520" r="24" fill="#d4ad76" fill-opacity="0.35"/>
+<text x="82" y="96" font-size="26" letter-spacing="5" fill="#d4ad76" font-family="Arial, sans-serif">LOCAL PANTRY GIFT</text>
+
+    </svg>
