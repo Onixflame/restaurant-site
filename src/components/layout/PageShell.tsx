@@ -54,11 +54,28 @@ export function PageShell({ children }: { children: ReactNode }) {
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    const nodes = Array.from(document.querySelectorAll<HTMLElement>('.reveal'));
-    if (!nodes.length || !('IntersectionObserver' in window)) {
-      nodes.forEach(n => n.classList.add('is-visible'));
-      return;
+    const main = document.getElementById('main-content');
+    if (!main) return;
+
+    const revealNodes = (root: ParentNode | HTMLElement) => {
+      const nodes: HTMLElement[] = [];
+      if (root instanceof HTMLElement && root.classList.contains('reveal')) nodes.push(root);
+      nodes.push(...Array.from(root.querySelectorAll<HTMLElement>('.reveal')));
+      return nodes;
+    };
+
+    if (!('IntersectionObserver' in window)) {
+      const show = (root: ParentNode | HTMLElement) => revealNodes(root).forEach(node => node.classList.add('is-visible'));
+      show(main);
+      const mutations = new MutationObserver(records => {
+        records.forEach(record => record.addedNodes.forEach(node => {
+          if (node instanceof HTMLElement) show(node);
+        }));
+      });
+      mutations.observe(main, { childList: true, subtree: true });
+      return () => mutations.disconnect();
     }
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -67,8 +84,25 @@ export function PageShell({ children }: { children: ReactNode }) {
         }
       });
     }, { threshold: 0.13, rootMargin: '0px 0px -7% 0px' });
-    nodes.forEach(n => observer.observe(n));
-    return () => observer.disconnect();
+
+    const observe = (root: ParentNode | HTMLElement) => {
+      revealNodes(root).forEach(node => {
+        if (!node.classList.contains('is-visible')) observer.observe(node);
+      });
+    };
+
+    observe(main);
+    const mutations = new MutationObserver(records => {
+      records.forEach(record => record.addedNodes.forEach(node => {
+        if (node instanceof HTMLElement) observe(node);
+      }));
+    });
+    mutations.observe(main, { childList: true, subtree: true });
+
+    return () => {
+      mutations.disconnect();
+      observer.disconnect();
+    };
   }, [location.pathname]);
 
   const showMobileBar = location.pathname !== '/admin';
